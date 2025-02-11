@@ -43,7 +43,7 @@ def answer_question_with_model(data, question):
             best_image = entry['image']
 
     if best_answer:
-        return f"Ответ: {best_answer}. Соответствующая фотография: {best_image}"
+        return best_answer, best_image
     else:
         return "Нет соответствующего ответа."
 
